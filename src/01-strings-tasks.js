@@ -239,9 +239,9 @@ function isString(value) {
     return true;
   }
   if (
-    typeof value === 'object' &&
-    value !== null &&
-    typeof value.valueOf() === 'string'
+    typeof value === 'object'
+    && value !== null
+    && typeof value.valueOf() === 'string'
   ) {
     return true;
   }
